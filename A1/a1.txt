@@ -1,0 +1,131 @@
+1.
+
+a)
+
+The installation of spying software by one's partner is a violation of one's confidentiality and integrity.
+
+Confidentiality pertains to who is authorized to access certain data. If a person install spying software on one's partner, then it is likely
+the case that they are trying to gain authorization to information that one's partner has chosen to keep confidential. This attempt at gaining unauthorizedd
+access to one's partner's data therefore compromises the partner's confidentiality.
+
+Additionally, the spying software is a compromise of the partner's integrity. Integrity relates to the expectation that data should not be unexpectedly
+modified and should be accurate. When one's partner goes to look at the application's on his or her phone, either because the software was not
+well hidden, or because they notice a change in their data usage and storage space, they will experience an integrity violation. The data on the person's
+phone was modified without permission and the integrity of the data on the phone has been compromised.
+
+It is not a privacy compromise since this is a security issue, not a privacy issue. A privacy issue is related to the individual's right to
+informational self-determination and choosing who gets to use, see and give away his or her data. The correct privacy policies were in place, the person was not
+permitted to access the data, but the security of the phone was compromised, allowing access to data that should have remained private. It is also not an availability
+compromise, as all of the phone's data is still accessible to the partner.
+
+b)
+
+Google selling demographic information to malicious hackers is a violation of confidentiality and privacy.
+
+While I am not certain of Google's agreements with users, it is unlikely that in such confidentiality agreements, it was agreed upon that user data
+could be given to malicious parties. This distribution of information to malicious parties is a compromise of the confidentiality of Google's user data as
+the malicious parties are not authorized to see it.
+
+This issue is a privacy violation, as Google's privacy policy to its users ensures that the data will not be used maliciously. To sell the data to malicious hackers
+is a violation of the privacy rights between Google and its users.
+
+This issue is not an availability compromise since the data is still available, nor is it an integrity compromise, since user data has not been modified and is still accurate.
+
+c)
+
+Breaking into a dating site and stealing user information is a compromise of confidentiality.
+
+This is a security issue, and compromises confidentiality since the attackers have gained unauthorized access to data that they are not allowed to see.
+
+This is not a privacy issue, since the privacy agreements between the site and the users have not been violated, rather a security breach that accessed data that was
+explicitly private to certain users was made. This is not an availability or integrity compromise, since the data is still present in the system and unchanged.
+
+d)
+
+Replacing the software in one's car is a confidentiality, integrity and availability compromise.
+
+This is a confidentiality compromise since hackers have gained access to unauthorized systems.
+
+It is also an integrity compromise, as the user expects certain software and firmware to be present in the car, possibly with features that they regularly used and which may no longer be present.
+Since the data in the car has been modified, this is an integrity compromise of the software and firmware of the car.
+
+This is also an availability compromise, since certain features and data that was accessible in the car before the hack, such as voice navigation, or automatic parallel parking
+may now be broken as a result of the software and firmware replacement. The availability of abilities that the previous software and firmware supported has been compromised.
+
+This issue is not a privacy compromise, since it is a security issue and no privacy agreements that the user of the car agreed to have been violated.
+
+e)
+
+The replacement of the expected site with this illegal one is a compromise of users' confidentiality, integrity, availability and privacy.
+
+This is a confidentiality compromise because the user did not give the government authorization to their own systems for the purpose of downloading and installing
+malware that could be altering their system and accessing unauthorized data.
+
+This is an integrity compromise because the original site, and possibly the data that users kept on the site has been unacceptably modified and possibly been made inaccurate.
+It is also an integrity compromise because the data on the users' own machines has been modified by the malware that the user did not intent to download and install.
+
+Furthermore, this is an availability compromise as the website that the user wanted to use is no longer available and the purpose they had for using the original site is now not achievable. The
+data they had on the original site could also not be available after the site was replaced with the illegal one.
+
+Lastly, this is a privacy violation as the government had a privacy agreement with users and citizens to use their data subject to the privacy rights that the citizens have. Since
+the site is illegal and violating user's rights to control the purpose of what their data is used for, their privacy has been compromised by the government.
+
+f)
+
+Lizards shutting down the Internet is an availability compromise, and frankly very scary. It is an availability compromise
+since the data on the Internet that users intend to access can no-longer be reached.
+
+This is not any of the other compromises, as the Internet has only been made inaccessible and no data has been accessed or used by the lizards thus far.
+
+2.
+
+a)
+
+The first threat that applies to the distribution of medication to patients is that some problem occurs in the production of the medication and
+it is not able to be produced for a period of time. This threat is categorized as an interruption threat.
+
+A second threat is that the medication is laced with unwanted or dangerous medications either by accidental contamination or intentionally in order
+to reduce costs by using cheaper substitutes. This threat is categorized as a modification threat.
+
+A third threat is that the medication is completely fabricated by an illegitimate source and sold to distributors, posing as the original medication.
+This threat is categorized as a fabrication threat.
+
+A fourth threat is that during the distribution process, the medication is intercepted, and amounts of it are stolen and sold on the black market
+to patients or non-patients who may be addicted to the substance or require it for similar reasons. This threat is categorized as an interception threat.
+
+b)
+
+Prevent:
+
+One way to prevent the threat of interruption of distribution to patients is to ensure that all steps in the process of getting
+the medication from production to distribution and ultimately to the consumer have redundancies. If medication cannot be distributed to
+certain patients, for example insulin to people who require it because of diabetes, then the consequences are very severe. The drug must
+have multiple sources of production and many different distribution centers so that if something happens to one of them, there is always a way to get the drug
+to the people who need it.
+
+Deter:
+
+One way to deter the threats of interception, modification, and fabrication of the drug is to pose stricter laws surrounding these illegal activities.
+Many potential thieves and illegitimate modifiers or fabricators will re-consider their activities if the laws that they are breaking are made
+too severe to be worth the continued risk. This of course won't solve the problem completely, but it acts as a deterrent to some groups of people.
+
+Deflect:
+
+In order to deflect the threat of fabrication of the drug is to make it more difficult to produce and less attractive as a choice to make illegally. By restricting access to the ingredients
+required to make the drug and concealing or obfuscating the process by which it is produced, it can be made harder for illegitimate fabricators to
+create their own version of the drug.
+
+Detect:
+
+A way to detect the threats of interception, modification and fabrication of the drug is to more tightly monitor the transport, creation and distribution of the drug
+along all steps of the production process. This can be achieved through cameras in all transport vehicles and production facilities, as well as marking of the drug
+with serial numbers that can be used to trace its origins.
+
+Recover:
+
+One way to recover from the threat of interruption is to boost production of the drug once whatever interruption that occurred has been resolved.
+If there was a shortage of a certain chemical that stopped production for a day, then contact other centers to ship the ingredient as soon as possible. While waiting for the
+production to resume, increase production of all other drugs so that when production is ready to continue, resources can be diverted from the production of the other drugs to
+the one that experienced the shortage until the supply is restored.
+
+3.
