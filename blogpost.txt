@@ -1,0 +1,56 @@
+Volkswagen Fixes Diesel Emissions Tests
+
+On September 23rd, Volkswagen CEO Martin Winterkorn resigned after admitting that the company
+had cheated on diesel emissions tests by using a software logic bomb that was triggered to modify emissions
+when run under a testing environment [1].
+
+# Why is it important?
+
+Diesel fuel is liter by liter more efficient than using gasoline in terms of fuel. A problem with using diesel engines, however, is that it can produce large quantities of nitrogen oxide pollutants. These
+pollutants are regulated even more tightly than carbon dioxide emissions, and the pollutant is known to cause serious environmental and health effects including respiratory and heart disease [3].
+
+It is therefore essential that all diesel vehicles that are permitted on the road meet the strict regulations imposed on them by government agencies
+such as the EPA. This issue is also very important from an ethics point of view, as the fact that the engineers and leaders at Volkswagen were
+willing to bypass these regulations is a blow to the entire automobile industry.
+
+# Who is affected?
+
+Over 1.1 million VW vehicles across the world could be affected and emitting over the legal limit of nitrogen oxides [4]. As a consequence, Volkswagen's stock price has fallen 20% in the past week, and investors
+remain skeptical of the entire industry while the ramifications of this emissions violation continue to develop. The penalty that Volkswagen will face is expected to total over 18 billion dollars in damages.
+
+Members of the German government have also been affected by the incident, as claims that politicians sought to protect the growing concern
+of emissions violations in the industry continue to grow [4].
+
+# Impact on People
+
+It is unclear how Volkswagen will recover from this scandal, and details regarding any planned large-scale recall have not been released.
+Until then, the largest impact will be felt on the automobile and engineering community, which must bare the weight of this large-scale ethical
+violation in the industry.
+
+The US Department of Justice is launching an investigation and congressional hearings will be held to address the scandal and provide the public
+with a thorough explanation of how this violation was allowed to take place [2].
+
+# Cause of the Scandal
+
+Software was written into the electronic control module (ECM) of Volkswagen vehicles that would change the emissions output by the car
+under certain conditions such as the "position of the steering wheel, vehicle speed, duration of the engine's operation, and barometric pressure" [2].
+When the device was enabled, the car would reduce fuel economy and performance, resulting in decreased nitrogen oxide emissions.
+
+Defeat devices that sense when vehicles are undergoing tests have been used before in the industry to bypass strict emissions testing [2]. Analysts were only
+able to notice the problem with the vehicles after they conducted tests out on the roads, rather than using the standard procedure of checking
+the cars under a testing environment in an emissions center [2].
+
+# Preventing this from happening again
+
+This scandal will undoubtedly result in much stricter emissions tests for vehicles, in order to prevent the use of future defeat devices. While
+testing environments today currently try and simulate real driving situations, by making the environment more realistic, or actually taking the car
+out on road tests, a defeat device would be unable to determine when it should activate.
+
+An additional precaution that should be taken is the potential examination of the software that is on the car's ECMs. If this could be done legally
+in a way that ensures that no specialized software has been written to modify the car's performance under testing conditions then there would be no way to
+change the car's emissions during tests.
+
+[1] Brown, M. (2015, September 24). Volkswagen Emissions Scandal: What Is A ‘Defeat Device,’ How Does It Work, And Why Can’t You See It? Retrieved from http://www.ibtimes.com/volkswagen-emissions-scandal-what-defeat-device-how-does-it-work-why-cant-you-see-it-2112350
+[2] Benchoff, B. (2015, September 23). ETHICS IN ENGINEERING: VOLKSWAGEN’S DIESEL FIASCO. Retrieved from http://hackaday.com/2015/09/23/ethics-in-engineering-volkswagens-diesel-fiasco/
+[3] Nitrogen Dioxide Health. (2015, September 10). Retrieved from http://www3.epa.gov/airquality/nitrogenoxides/health.html
+[4] Barkin, N. (2016, September 26). VW scandal exposes cozy ties between industry and Berlin. Retrieved from http://www.reuters.com/article/2015/09/26/us-volkswagen-emissions-germany-politics-idUSKCN0RQ0BU20150926
