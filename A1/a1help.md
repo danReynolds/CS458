@@ -56,6 +56,8 @@ in the buffer s. n is the max number of bytes allowed in the generated buffer.
 
 Maybe that can be exploited?
 
+Other exploits, the ls -la maybe and the shadow thing.
+
 ## Suggested Readings
 
 `execve` = filename, then args array to pass to file that is run.
