@@ -1,5 +1,3 @@
-Volkswagen Fixes Diesel Emissions Tests
-
 On September 23rd, Volkswagen CEO Martin Winterkorn resigned after admitting that the company
 had cheated on diesel emissions tests by using a software logic bomb that was triggered to modify emissions
 when run under a testing environment [1].

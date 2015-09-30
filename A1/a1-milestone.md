@@ -1,4 +1,4 @@
-Sploit1: Buffer Overflow
+## Sploit1: Buffer Overflow
 
 A buffer overflow exploit targets areas in the code where the data copied into a
 buffer is larger than the length of the buffer. The excess data runs up the stack past the end
@@ -26,7 +26,7 @@ of the location of the environment variable, and /bin/sh will be run, providing 
 This exploit can be fixed by changing the size limit in the snprintf on line 369 to 171, the size of the txt buffer.
 That way no data can be written outside the buffer, and the higher addresses of the stack cannot be modified.
 
-Sploit2: Format String Vulnerability
+## Sploit2: Format String Vulnerability
 
 A format string vulnerability is present when a print method such as printf is only given one argument, such as
 
