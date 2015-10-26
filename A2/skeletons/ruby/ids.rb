@@ -40,6 +40,7 @@ packets.each do |packet|
     spoof.run(packet)
     server.run(packet)
   end
+  sinkhole.run(packet)
   anomaly.run(packet)
 end
 anomaly.message
