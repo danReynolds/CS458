@@ -2,12 +2,12 @@
 
 require 'packetfu'
 require 'pry'
+require 'resolv'
 require_relative 'attack'
 require_relative 'anomaly'
 require_relative 'spoof'
 require_relative 'server'
 require_relative 'sinkhole'
-require_relative 'helpers'
 
 include PacketFu
 
@@ -36,10 +36,8 @@ sinkhole = Sinkhole.new(args.merge!({
 
 packets = PcapFile.read_packets(PATH)
 packets.each do |packet|
-  if full_packet?(packet)
-    spoof.run(packet)
-    server.run(packet)
-  end
+  spoof.run(packet)
+  server.run(packet)
   sinkhole.run(packet)
   anomaly.run(packet)
 end
