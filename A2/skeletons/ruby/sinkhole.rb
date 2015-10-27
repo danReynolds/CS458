@@ -20,15 +20,11 @@ class Sinkhole < Attack
       return
     end
 
-    answers = payload.answer
-
-    answers.each do |answer|
-      break unless answer.last.class == Resolv::DNS::Resource::IN::A
-      address = answer.last.address.to_s
-      if @sinkholes.include? address
-        @description = "src:#{packet.ip_daddr}, host:#{answer.first.to_s}, ip:#{address}"
-        message
-      end
+    payload.answer.select do |answer|
+      answer.last.class == Resolv::DNS::Resource::IN::A && @sinkholes.include?(answer.last.address.to_s)
+    end.each do |sinkhole_answer|
+      @description = "src:#{packet.ip_daddr}, host:#{sinkhole_answer.first.to_s}, ip:#{sinkhole_answer.last.address.to_s}"
+      message
     end
   end
 end
