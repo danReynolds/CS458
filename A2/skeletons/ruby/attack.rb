@@ -33,4 +33,8 @@ class Attack
   def full_packet?(packet)
     ip_packet?(packet) && tcp_packet?(packet)
   end
+
+  def arp_packet?(packet)
+    packet.methods.include? :arp_header
+  end
 end
