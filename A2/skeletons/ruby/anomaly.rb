@@ -1,5 +1,5 @@
 class Anomaly < Attack
-  attr_accessor :packets, :bytes
+  attr_reader :packets, :bytes
 
   def initialize(args)
     @bytes = 0

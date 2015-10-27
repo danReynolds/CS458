@@ -1,5 +1,5 @@
 class Server < Attack
-  attr_accessor :attempted_type, :accepted_type
+  attr_reader :attempted_type, :accepted_type
 
   def initialize(args)
     super
@@ -8,8 +8,8 @@ class Server < Attack
   end
 
   def run(packet)
-    return unless full_packet? packet
-    
+    return unless full_packet?(packet)
+
     if external?(packet.ip_src)
       if internal?(packet.ip_dst) && packet.tcp_flags.syn == 1 && packet.tcp_flags.ack == 0
         @type = @attempted_type

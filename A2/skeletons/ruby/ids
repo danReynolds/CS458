@@ -64,7 +64,13 @@ ddos = DDOS.new(args.merge!({
     type: 'NTP DDoS'
 }))
 
-packets = PcapFile.read_packets(PATH)
+begin
+  packets = PcapFile.read_packets(PATH)
+rescue ArgumentError
+  puts "Could not read packets from file \"#{PATH}\""
+  exit
+end
+
 packets.each do |packet|
   spoof.run(packet)
   server.run(packet)

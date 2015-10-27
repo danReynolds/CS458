@@ -30,7 +30,7 @@ output_files = [
 ]
 
 blackbox_test_files.length.times do |i|
-  %x[./ids.rb #{blackbox_path}#{blackbox_test_files[i]} > #{output_files[i]}]
+  %x[./ids #{blackbox_path}#{blackbox_test_files[i]} > #{output_files[i]}]
 end
 
 blackbox_log_files.length.times do |i|

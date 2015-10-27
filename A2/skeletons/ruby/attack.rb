@@ -1,5 +1,5 @@
 class Attack
-  attr_accessor :type, :description, :addresses
+  attr_reader :type, :description, :addresses
 
   def initialize(args)
     @type = args[:type]

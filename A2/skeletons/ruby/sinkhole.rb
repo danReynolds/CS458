@@ -1,5 +1,5 @@
 class Sinkhole < Attack
-  attr_accessor :sinkholes
+  attr_reader :sinkholes
 
   def initialize(args)
     super

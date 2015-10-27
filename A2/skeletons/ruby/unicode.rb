@@ -1,7 +1,7 @@
 class Unicode < Attack
   attr_reader :unicode_chars
 
-  HTTP_PORT = 80
+  HTTP_PORT = 80                                                                # Port 80 indicates it was a HTTP request
 
   def initialize(args)
     super

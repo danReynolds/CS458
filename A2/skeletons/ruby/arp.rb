@@ -1,5 +1,5 @@
 class Arp < Attack
-  attr_accessor :addresses
+  attr_reader :addresses
 
   def initialize(args)
     super
