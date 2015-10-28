@@ -41,23 +41,26 @@ arp = Arp.new(args.merge!({
 unicode = Unicode.new(args.merge!({
     type: 'Unicode IIS exploit',
     unicode_chars: [
-      '%255c',
-      '%%35c',
-      '%%35%63',
-      '%25%35%63',
-      '%5c',
-      '%2f',
-      '%252f',
-      '%c1%1c',
-      '%c0%af',
-      '%c1%af',
-      '%c1%9c',
-      '%e0%80%af',
-      '%e0\%80\%af',
-      '%f0%80%80%af',
-      '%f8%80%80%80%af',
-      '%fc%80%80%80%80%af',
-      '%fc%80%80%80%af'
+      '%2f',                                                                    # 1-byte encoding of '/'
+      '%c0%af',                                                                 # 2-byte encoding of '/'
+      '%e0%80%af',                                                              # 3-byte encoding of '/'
+      '%f0%80%80%af',                                                           # 4-byte encoding of '/'
+      '%f8%80%80%80%af',                                                        # 5-byte encoding of '/'
+      '%fc%80%80%80%80%af',                                                     # 6-byte encoding of '/'
+      '%5c',                                                                    # 1-byte encoding of '\'
+      '%c1%9c',                                                                 # 2-byte encoding of '\'
+      '%e0%81%9c',                                                              # 3-byte encoding of '\'
+      '%f0%80%81%9c',                                                           # 4-byte encoding of '\'
+      '%252f',                                                                  # %25 = %, so we get %2f
+      '%255c',                                                                  # %25 = %, so we get %5c
+      '%%35c',                                                                  # %35 = 5, so we get %5c
+      '%%35%63',                                                                # %63 = c, so we get %5c
+      '%25%35%63',                                                              # %25 = %, %35 = 5, %63 = c, get %5c
+      '%c1%1c',                                                                 # Invalid UTF-8 but accepted: 11000001 00011100 for the 2-byte instead of valid 11000001 10011100 (%c1%9c)
+      '%c0%2f',                                                                 # Invalid UTF-8 but accepted: 11000000 00101111 for the 2-byte instead of valid 11000000 10101111 (%c0%af)
+      '%fc%80%80%80%af',                                                        # Invalid UTF-8 but accepted: 11111100 ... instead of 1111100, which would be the valid version for a 5-byte encoding
+      '%e0\%80\%af',                                                            # Like %e0%80%af = /, but now we escape the /'s
+      '%c1%af'
     ]
 }))
 ddos = DDOS.new(args.merge!({

