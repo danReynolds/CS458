@@ -59,7 +59,7 @@ unicode = Unicode.new(args.merge!({
       '%c1%1c',                                                                 # Invalid UTF-8 but accepted: 11000001 00011100 for the 2-byte instead of valid 11000001 10011100 (%c1%9c)
       '%c0%2f',                                                                 # Invalid UTF-8 but accepted: 11000000 00101111 for the 2-byte instead of valid 11000000 10101111 (%c0%af)
       '%fc%80%80%80%af',                                                        # Invalid UTF-8 but accepted: 11111100 ... instead of 1111100, which would be the valid version for a 5-byte encoding
-      '%e0\%80\%af',                                                            # Like %e0%80%af = /, but now we escape the /'s
+      '%e0\%80\%af',                                                            # These 2 are unknown
       '%c1%af'
     ]
 }))
