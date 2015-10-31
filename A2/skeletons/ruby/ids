@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'packetfu'
-require 'pry'
 require 'resolv'
 require_relative 'attack'
 require_relative 'anomaly'
