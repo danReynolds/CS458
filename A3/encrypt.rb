@@ -38,7 +38,7 @@ def calculate_encoding(plain_block)
   encoded_bytes = Array.new(BLOCK_SIZE, 0)
   padding_length = 0
 
-  plain_block.reverse.each_with_index do |byte, index|
+  plain_block.reverse.each_with_index do |_, index|
     pos = BLOCK_SIZE - index - 1
     if index.zero?
       hack_block[pos] = find_offset(hack_block.dup, plain_block, pos)
@@ -57,7 +57,7 @@ end
 
 text = ARGV[0]
 block = BYTE_RANGE.shuffle.first(16)
-blocks = text.split("").each_slice(16).map(&:to_a)
+blocks = text.bytes.each_slice(16).map(&:to_a)
 
 padding_length = BLOCK_SIZE - blocks.last.length
 if padding_length > 0
@@ -65,6 +65,21 @@ if padding_length > 0
   blocks[blocks.length - 1][BLOCK_SIZE - 1] = padding_length
 end
 
-encoding = calculate_encoding(block)
-# Now we have the encoding, the C-1(y) for our block, can make it any message
-# with the appropriate preceding cypher block
+encrypted_blocks = []
+blocks.reverse.each_with_index do |block, index|
+  encoding = calculate_encoding(block)
+
+  if index.zero?
+    init_vec = encoding.each.with_index.map do |byte, i|
+      block[i] ^ byte
+    end
+    encrypted_blocks << init_vec << block
+  else
+    encoding = calculate_encoding(encrypted_blocks.first)
+    init_vec = encoding.each.with_index.map do |byte, i|
+      block[i] ^ byte
+    end
+    encrypted_blocks.unshift(init_vec)
+  end
+end
+puts Base64.encode64(encrypted_blocks.flatten.pack("c*")).gsub(/\n/, '')

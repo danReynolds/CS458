@@ -44,7 +44,6 @@ def decrypt(decrypt_block, cipher_block)
     if index.zero?
       hack_block[pos] = find_offset(hack_block.dup, decrypt_block, pos)
       padding_length = calculate_padding(hack_block.dup, decrypt_block)
-      puts padding_length
       encoded_bytes[pos] = hack_block[pos] ^ padding_length
     elsif index < padding_length - 1
       encoded_bytes[pos] = hack_block[pos]
@@ -55,16 +54,12 @@ def decrypt(decrypt_block, cipher_block)
   end
 
   cipher_block.zip(encoded_bytes).map do |cipher_byte, encoded_byte|
-    puts cipher_byte ^ encoded_byte
     cipher_byte ^ encoded_byte
   end.pack("c*")
 end
 
 decrypted_message = (blocks.length - 1).times.inject("") do |acc, i|
-  a = decrypt(blocks.pop, blocks.last)
-  puts a.bytes.map(&:to_a).join(",")
-  a + acc
+  decrypt(blocks.pop, blocks.last) + acc
 end
 
-puts decrypted_message.bytes.map(&:to_a).join(",")
 puts decrypted_message
