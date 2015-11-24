@@ -1,0 +1,70 @@
+require 'net/http'
+require 'base64'
+
+HTTP_OK    = "200"
+HTTP_ERROR = "500"
+BLOCK_SIZE = 16
+BYTE_RANGE = (0..255).to_a
+
+def send_request(cookie)
+  url = "http://localhost:4555"
+  uri = URI(url)
+  http = Net::HTTP.new(uri.host, 4555)
+  request = Net::HTTP::Get.new(uri.request_uri)
+  request['Cookie'] = "user=#{cookie}"
+  http.request(request)
+end
+
+def find_offset(test_block, plain_block, pos)
+  (BYTE_RANGE).detect do |v|
+    test_block[pos] = v
+    guess = Base64.encode64((test_block + plain_block).pack('c*'))
+    res = send_request(guess)
+    res.code == HTTP_OK
+  end
+end
+
+def calculate_padding(test_block, plain_block)
+  BLOCK_SIZE - BLOCK_SIZE.times.detect do |i|
+    test_block[i] ^= 1
+    guess = Base64.encode64((test_block + plain_block).pack('c*'))
+    res = send_request(guess)
+    res.code == HTTP_ERROR
+  end
+end
+
+def calculate_encoding(plain_block)
+  hack_block = BYTE_RANGE.shuffle.first(16)
+  encoded_bytes = Array.new(BLOCK_SIZE, 0)
+  padding_length = 0
+
+  plain_block.reverse.each_with_index do |byte, index|
+    pos = BLOCK_SIZE - index - 1
+    if index.zero?
+      hack_block[pos] = find_offset(hack_block.dup, plain_block, pos)
+      padding_length = calculate_padding(hack_block.dup, plain_block)
+      encoded_bytes[pos] = hack_block[pos] ^ padding_length
+    elsif index < padding_length - 1
+      encoded_bytes[pos] = hack_block[pos]
+    else
+      hack_block[BLOCK_SIZE - 1] = encoded_bytes.last ^ (index + 1)
+      encoded_bytes[pos] = hack_block[pos] = find_offset(hack_block.dup, plain_block, pos)
+    end
+  end
+
+  encoded_bytes
+end
+
+text = ARGV[0]
+block = BYTE_RANGE.shuffle.first(16)
+blocks = text.split("").each_slice(16).map(&:to_a)
+
+padding_length = BLOCK_SIZE - blocks.last.length
+if padding_length > 0
+  blocks[blocks.length - 1] += Array.new(padding_length, 0)
+  blocks[blocks.length - 1][BLOCK_SIZE - 1] = padding_length
+end
+
+encoding = calculate_encoding(block)
+# Now we have the encoding, the C-1(y) for our block, can make it any message
+# with the appropriate preceding cypher block

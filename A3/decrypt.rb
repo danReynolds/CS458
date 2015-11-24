@@ -34,7 +34,7 @@ def calculate_padding(test_block, decrypt_block)
   end
 end
 
-def decode_block(decrypt_block, cipher_block)
+def decrypt(decrypt_block, cipher_block)
   hack_block = BYTE_RANGE.shuffle.first(16)
   encoded_bytes = Array.new(BLOCK_SIZE, 0)
   padding_length = 0
@@ -61,7 +61,7 @@ def decode_block(decrypt_block, cipher_block)
 end
 
 decrypted_message = (blocks.length - 1).times.inject("") do |acc, i|
-  a = decode_block(blocks.pop, blocks.last)
+  a = decrypt(blocks.pop, blocks.last)
   puts a.bytes.map(&:to_a).join(",")
   a + acc
 end
