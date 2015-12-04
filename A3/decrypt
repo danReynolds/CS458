@@ -1,3 +1,5 @@
+#! /usr/bin/env ruby
+
 require 'net/http'
 require 'base64'
 
@@ -53,13 +55,22 @@ def decrypt(decrypt_block, cipher_block)
     end
   end
 
-  cipher_block.zip(encoded_bytes).map do |cipher_byte, encoded_byte|
+  decrypted_text = cipher_block.zip(encoded_bytes).map do |cipher_byte, encoded_byte|
     cipher_byte ^ encoded_byte
   end.pack("c*")
+
+  {
+    :text => decrypted_text,
+    :padding => padding_length
+  }
 end
+
+decrypted_block = decrypt(blocks.pop, blocks.last)
+decrypted_message = decrypted_block[:text]
+padding = decrypted_block[:padding]
 
 decrypted_message = (blocks.length - 1).times.inject("") do |acc, i|
-  decrypt(blocks.pop, blocks.last) + acc
-end
+  decrypt(blocks.pop, blocks.last)[:text] + acc
+end + decrypted_message
 
-puts decrypted_message
+puts decrypted_message[0...(padding * -1)]
